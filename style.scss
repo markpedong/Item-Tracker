@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0f0f0;
+    background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgb(46, 46, 46);
+    text-align: center;
+
+    .title{
+        font-size: 30px;
+        font-family: 'Poppins', sans-serif;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.form-control{
+    input{
+        background-color: #a5a5a586;
+        border-radius: 10px;
+        border: none;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        padding: 10px;
+        min-width: auto;
+        width: 80%;
+    }
+
+    .submit-btn{
+        background-color: #B81616;
+        font-family: 'Montserrat', sans-serif;
+        padding: 15px;
+        border-radius: 10px;
+        border: none;
+        color: white;
+    }
+}

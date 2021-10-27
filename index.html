@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Tracker | Mark Jesson Pedong</title>
+    <!-- Website Logo -->
+    <link rel="shortcut icon" href="./webLogo.png" type="image/x-icon">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <section class="section-center">
+       <div class="container">
+           <!-- Title -->
+           <div class="title">Items Tracker</div>
+           <!-- Form -->
+           <div class="form-control">
+               <input type="text" id="items" placeholder="e.g. Computer">
+               <button type="submit" class="submit-btn">Submit</button>
+           </div>
+           <!-- Item List -->
+           <div class="item-container">
+               <div class="item-list">
+                   <article class="items">
+                       <p class="item-listTitle">Item</p>
+                       <div class="btn-container">
+                           <button type="button" class="edit-btn">
+                               <i class="fas fa-edit"></i>
+                           </button>
+                           <button type="button" class="delete-btn">
+                               <i class="fas fa-trash"></i>
+                           </button>
+                       </div>
+                   </article>
+               </div>
+               <!-- Button -->
+               <button type="button" class="clear-btn">Clear Items</button>
+           </div>
+       </div>
+         
+    </section>
+</body>
+<script src="./app.js"></script>
+</html>
