@@ -14,10 +14,11 @@ section {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-
+    
 }
 
 .container{
+    padding: 2rem 0rem;
     background-color: white;
     width: 100%;
     height: auto;
@@ -29,13 +30,35 @@ section {
     .title{
         font-size: 30px;
         font-family: 'Poppins', sans-serif;
-        padding: 10px;
-        margin-bottom: 10px;
+        line-height: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
+}
+
+.alert{
+    border-radius: 7px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-family: 'Questrial', sans-serif;
+    display: inline-block;
+    width: 60%;
+}
+
+.alert-danger{
+    color:rgb(126, 0, 0);
+    background: rgba(192, 92, 92, 0.425);
+    
+}
+
+.alert-success{
+    color: rgb(75, 204, 75);
+    background: rgba(32, 175, 156, 0.219);
 }
 
 .form-control{
     padding-bottom: 50px;
+
     input{
         background-color: #a5a5a586;
         border-radius: 10px;
@@ -69,16 +92,59 @@ section {
     border: 2px solid rgba(0, 0, 0, 0.473);
     margin: 0px 35px;
     border-radius: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    
+}
+
+.show-container{
+    visibility: visible;
 }
 
 .itemsList {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 4fr 1fr;
+    
+
+    .item-listTitle{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 25px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+    }
 
     .btn-container{
       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
     }
+    .edit-btn{
+        color: rgb(0, 0, 0);
+        border: none;
+        background: none;
+        padding: 10px;
+    }
+    .delete-btn{
+        color: rgb(0, 0, 0);
+        border: none;
+        background: none;
+        padding: 10px;
+
+    }
+}
+
+.clear-btn{
+    margin-top: 25px;
+    letter-spacing: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    border: 1px solid opacity($color: #00000000);
+    padding: 5px 15px;
+    border-radius: 10px;
 }
