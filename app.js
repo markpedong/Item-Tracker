@@ -21,7 +21,7 @@ addItem = (e) => {
     const id = new Date().getTime().toString()
     if (value && !editFlag) {
         createListItem(id, value)
-        displayAlert('item added to the list', 'success');
+        displayAlert('Item added to the list', 'success');
         // show container
         container.classList.add('show-container')
         //add to Local Storage
@@ -31,19 +31,20 @@ addItem = (e) => {
 
     }else if (value && editFlag){
         editElement.innerHTML = value;
-        displayAlert('value changed', 'success');
+        displayAlert('Value changed', 'success');
         // edit Local Storage
         editLocalStorage(editID, value);
         setBackToDefault()
     }else{
         displayAlert("Please Enter value", "danger" )
+        
     }
 }
 // display alert
 displayAlert = (text, action) => {
     alert.textContent = text;
     alert.classList.add(`alert-${action}`)
-
+    
     // remove alert
     setTimeout(function () {
         alert.textContent = "";
@@ -62,7 +63,7 @@ clearItems = () => {
         });
     }
     container.classList.remove("show-container")
-    displayAlert("empty list", "danger") 
+    displayAlert("Empty list", "danger") 
     setBackToDefault()
     localStorage.removeItem('list');
 }
@@ -183,3 +184,4 @@ submitBtn.addEventListener("click", addItem);
 clearBtn.addEventListener("click", clearItems)
 // load Items
 window.addEventListener('DOMContentLoaded', setupItems);
+

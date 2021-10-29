@@ -5,8 +5,9 @@
 }
 
 body{
-    background-color: #f0f0f0;
-    background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+
 }
 
 section {
@@ -24,8 +25,9 @@ section {
     height: auto;
     max-width: 500px;
     border-radius: 30px;
-    box-shadow: 0 0 50px rgb(46, 46, 46);
+    box-shadow: 0 0 50px rgba(119, 119, 119, 0.301);
     text-align: center;
+    
 
     .title{
         font-size: 30px;
@@ -43,7 +45,9 @@ section {
     font-family: 'Questrial', sans-serif;
     display: inline-block;
     width: 60%;
+   
 }
+
 
 .alert-danger{
     color:rgb(126, 0, 0);
@@ -109,31 +113,32 @@ section {
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         font-size: 25px;
-        padding: 10px;
+        padding: 5px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
-
+        margin-left: 15px;
+        letter-spacing: 1px;
     }
 
     .btn-container{
-      
+        padding: 3px;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 10px;
+        
     }
     .edit-btn{
         color: rgb(0, 0, 0);
         border: none;
         background: none;
-        padding: 10px;
+        padding:5px;
     }
     .delete-btn{
         color: rgb(0, 0, 0);
         border: none;
         background: none;
-        padding: 10px;
+        padding:5px;
 
     }
 }
